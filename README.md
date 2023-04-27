@@ -1,8 +1,11 @@
 # Main-Project-
 Code for Main Project
 % Main simulation parameters
+
 PSDU_LENGTH = 40;       % Length of PSDU (symbols) in TX packet
+
 MSC_index = 1;           % Modulation and Coding Scheme index 
+
 N_packets = 10;         % Number of TX packets to simulate per trial
 channel_model = 'AWGN';  % Channel model: 'AWGN', 'A', 'B', 'C'
 A_sat = 2.7;             % PA saturation level, see: hpa_model_rapp()
