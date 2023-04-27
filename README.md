@@ -24,26 +24,41 @@ SNR = [17.5 20 22.5 25 27.5 30 35];
 %SNR = [12.5 15 17.5 18.75 20 21.25 22.5 23.75 25 26.25 30]; % for MSC=6 
  
 % Overriden parameters
+
 enable_hpa = 1;          % Enable power amplifier switch (overriden)
+
 enable_ndc = 1;          % Enable nonlinear distortion compensation (overriden)
+
 enable_fec = 1;          % Enable FEC feedback (overriden)
  
 % System parameters
+
 Fs = 160;  % Only 160Mhz mode is currently supported
+
 L = 5;     % Oversampling factor
  
 min_packet_errors = 20; 
+
 min_packets = 200;
  
 BER1 = zeros(size(SNR));
+
 PER1 = zeros(size(SNR));
+
 BER2 = zeros(size(SNR));
+
 PER2 = zeros(size(SNR));
+
 BER3 = zeros(size(SNR));
+
 PER3 = zeros(size(SNR));
+
 BER_lin = zeros(size(SNR));
+
 PER_lin = zeros(size(SNR));
+
 BER_nln = zeros(size(SNR));
+
 PER_nln = zeros(size(SNR));
  
 for u=1:length(SNR)
